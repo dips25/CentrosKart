@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/pid"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:text="product Id"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ptid"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_alignTop="@+id/pid"
+        android:layout_toEndOf="@+id/pid" />
+
+    <TextView
+        android:id="@+id/pname"
+        android:hint="product Name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/ptid"
+        android:layout_alignStart="@+id/pid"
+        android:layout_below="@+id/pid"
+        android:layout_marginTop="28dp"
+      
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/oid"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/pname"
+        android:layout_below="@+id/pname"
+        android:layout_marginTop="23dp"
+        android:text="Order Id"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/otid"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/oid"
+        android:layout_alignEnd="@+id/pname"
+        android:layout_alignStart="@+id/ptid"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/edd"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/oid"
+        android:layout_below="@+id/oid"
+        android:layout_marginTop="42dp"
+        android:text="Expected Date of Delivary"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etdd"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/otid"
+        android:layout_alignTop="@+id/edd"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignEnd="@+id/otid" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/edd"
+        android:layout_below="@+id/edd"
+        android:layout_marginTop="29dp"
+        android:text="Price"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignEnd="@+id/etdd"
+        android:layout_alignStart="@+id/etdd"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorAccent"
+        android:text="Confirm"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>
